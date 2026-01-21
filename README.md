@@ -1,1 +1,74 @@
-# inventory-management-system
+Smart Inventory Control System
+
+A web-based inventory management platform designed to track stock levels, generate low-stock alerts, and provide real-time insights through a dashboard interface.  
+Built as a full-stack application using modern REST architecture.
+
+1. Overview
+
+This system helps organizations monitor inventory items, avoid shortages, and maintain stock visibility across categories and locations.  
+It supports real-time updates, alert generation, and data visualization.
+
+2. Technology Stack
+
+Backend
+- FastAPI (Python)
+- SQLAlchemy ORM
+- SQLite database
+
+Frontend
+- React.js
+- Chart.js
+- React Icons
+- CSS (custom dashboard UI)
+
+3. Core Features
+
+- Create, update, and delete inventory records  
+- Inline quantity editing  
+- Configurable low-stock thresholds  
+- Automatic alert generation  
+- Inventory summary dashboard  
+- Stock status bar chart  
+- Search and pagination  
+- CSV import and export  
+- REST-based service communication  
+
+4. Project Structure
+
+inventory-system/
+backend/
+app.py  
+database.py  
+models.py  
+schemas.py  
+inventory_service.py  
+
+frontend/
+src/
+App.js  
+App.css  
+
+5. Running the Application
+
+Backend
+
+cd backend  
+source venv/bin/activate  
+python -m uvicorn app:app --reload  
+
+Frontend
+
+cd frontend  
+npm install  
+npm start  
+
+6. API Routes
+
+GET /inventory – Fetch all inventory records  
+POST /inventory – Add a new inventory record  
+PUT /inventory/{id} – Update an existing record  
+DELETE /inventory/{id} – Remove a record  
+GET /inventory/alerts – Retrieve low-stock alerts  
+GET /inventory/metrics – Retrieve summary statistics  
+
+Developed as part of a manufacturing inventory management case study.
