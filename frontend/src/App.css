@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0a1630, #020817);
+  color: #eaf1ff;
+}
+
+.app {
+  padding: 26px 40px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.cards div {
+  flex: 1;
+  background: linear-gradient(145deg, #0e1c3b, #020817);
+  padding: 14px 18px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  transition: 0.25s;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.cards div:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 18px rgba(0,255,255,0.35);
+  border-color: rgba(0,255,255,0.6);
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 18px;
+  margin-bottom: 16px;
+  align-items: start;
+}
+
+.chartBox {
+  background: rgba(255,255,255,0.04);
+  border-radius: 14px;
+  padding: 12px 14px;
+  height: 230px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.chartBox h3 {
+  font-size: 13px;
+  margin: 0 0 6px;
+  color: #a8c7ff;
+}
+
+.chartWrap {
+  position: relative;
+  height: 180px;
+}
+
+/* TOOLBAR */
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin: 8px 0;
+  align-items: center;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) auto;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.form input {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #0e1c3b;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.form input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0,255,255,0.4);
+}
+
+.form button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.form button:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 12px rgba(0,255,255,0.5);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 4px;
+}
+
+thead th {
+  padding: 8px;
+  font-size: 13px;
+  color: #a8c7ff;
+}
+
+tbody td {
+  padding: 8px;
+}
+
+tbody tr {
+  transition: 0.2s;
+}
+
+tbody tr:hover {
+  box-shadow: 0 0 14px rgba(0,255,255,0.35);
+  transform: scale(1.01);
+}
+
+.low {
+  background: linear-gradient(90deg, rgba(255,0,0,0.35), rgba(120,0,0,0.2));
+}
+
+.alerts {
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2a1a00, #120b00);
+  border: 1px solid rgba(255,180,0,0.3);
+}
